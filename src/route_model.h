@@ -19,7 +19,7 @@ class RouteModel : public Model {
     class Node : public Model::Node {
       public:
         // Add public Node variables and methods here.
-      	Node * parent = nullptr;
+      	Node *parent = nullptr;
       	float h_value = std::numeric_limits<float>::max();
       	float g_value = 0.0;
       	bool visited = false;
@@ -37,7 +37,7 @@ class RouteModel : public Model {
       private:
         // Add private Node variables and methods here.
         int index;
-        RouteModel * parent_model = nullptr;
+        RouteModel *parent_model = nullptr;
       	Node * FindNeighbor(vector<int> node_indices);
     };
     
